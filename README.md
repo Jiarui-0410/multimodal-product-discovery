@@ -371,12 +371,3 @@ historical notebooks and small synthetic evaluation artifacts. Dataset CSVs,
 product images, FAISS binaries, model weights, virtual environments, build
 output and real `.env` files are excluded. Create local configuration from
 `.env.example`; local demo database defaults are not production credentials.
-
-## Acknowledgements
-
-This project extends the original CLIP/FAISS product-search prototype by
-Animesh D Chourey. The original MIT copyright notice is retained in
-[LICENSE](LICENSE); the Colab notebooks preserve the earlier exploratory work.
-The Spring Boot application, PostgreSQL profiles, personalized ranking and
-offline evaluation extend that prototype. Dataset and model assets are
-distributed separately by their respective providers.
