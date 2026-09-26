@@ -1,0 +1,68 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: product_discovery
+      POSTGRES_USER: product_app
+      POSTGRES_PASSWORD: product_app
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U product_app -d product_discovery"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+
+  ml-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.ml
+    ports:
+      - "8000:8000"
+    volumes:
+      - huggingface_cache:/root/.cache/huggingface
+
+  java-api:
+    build: ./backend
+    environment:
+      DATABASE_URL: jdbc:postgresql://postgres:5432/product_discovery
+      DATABASE_USERNAME: product_app
+      DATABASE_PASSWORD: product_app
+      ML_SERVICE_URL: http://ml-service:8000
+      CATALOG_CSV_PATH: ${CATALOG_CSV_PATH:-}
+      CATALOG_IMAGES_DIR: /app/images
+      QUERY_WEIGHT: ${QUERY_WEIGHT:-0.60}
+      USER_WEIGHT: ${USER_WEIGHT:-0.30}
+      METADATA_WEIGHT: ${METADATA_WEIGHT:-0.10}
+      CANDIDATE_MULTIPLIER: ${CANDIDATE_MULTIPLIER:-10}
+      MAX_IMAGE_SIZE: ${MAX_IMAGE_SIZE:-20MB}
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data:ro
+      - ./images:/app/images:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ml-service:
+        condition: service_started
+
+  ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.ml
+    command: ["streamlit", "run", "src/ui.py", "--server.address=0.0.0.0"]
+    environment:
+      JAVA_API_URL: http://java-api:8080
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./images:/app/images:ro
+    depends_on:
+      - java-api
+
+volumes:
+  postgres_data:
+  huggingface_cache:

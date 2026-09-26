@@ -1,0 +1,70 @@
+{
+  "dataset": {
+    "catalog_products": 44419,
+    "query_count": 72,
+    "simulated_persona_count": 171
+  },
+  "configuration": {
+    "seed": 20260924,
+    "k": 10,
+    "minimum_relevant": 20,
+    "history_size": 10,
+    "candidate_pool": 500,
+    "mean_candidate_recall": 0.12346943239266954
+  },
+  "comparisons": {
+    "retrieval_clip_vs_bm25_overall": {
+      "baseline": "BM25",
+      "treatment": "CLIP",
+      "cohort": "overall",
+      "observations": 72,
+      "baseline_ndcg_at_k": 0.5075541083883158,
+      "treatment_ndcg_at_k": 0.6311034065733012,
+      "absolute_change": 0.12354929818498539,
+      "relative_change_percent": 24.342094003987686,
+      "paired_absolute_change_ci95_low": 0.00889179770653417,
+      "paired_absolute_change_ci95_high": 0.23621257954520428
+    },
+    "retrieval_clip_vs_bm25_literal": {
+      "baseline": "BM25",
+      "treatment": "CLIP",
+      "cohort": "literal",
+      "observations": 36,
+      "baseline_ndcg_at_k": 0.9477640275872186,
+      "treatment_ndcg_at_k": 0.6876827776334081,
+      "absolute_change": -0.26008124995381043,
+      "relative_change_percent": -27.441561652842566,
+      "paired_absolute_change_ci95_low": -0.3595597154661012,
+      "paired_absolute_change_ci95_high": -0.17073928681236275
+    },
+    "retrieval_clip_vs_bm25_paraphrased": {
+      "baseline": "BM25",
+      "treatment": "CLIP",
+      "cohort": "paraphrased",
+      "observations": 36,
+      "baseline_ndcg_at_k": 0.06734418918941304,
+      "treatment_ndcg_at_k": 0.5745240355131946,
+      "absolute_change": 0.5071798463237815,
+      "relative_change_percent": 753.1159739666354,
+      "paired_absolute_change_ci95_low": 0.38987517763257157,
+      "paired_absolute_change_ci95_high": 0.625131170745165
+    },
+    "personalization_full_vs_clip": {
+      "baseline": "CLIP",
+      "treatment": "Full Hybrid",
+      "cohort": "overall",
+      "observations": 171,
+      "baseline_ndcg_at_k": 0.03155073121735109,
+      "treatment_ndcg_at_k": 0.4053398565767567,
+      "absolute_change": 0.3737891253594056,
+      "relative_change_percent": 1184.7241282124173,
+      "paired_absolute_change_ci95_low": 0.3224500700597808,
+      "paired_absolute_change_ci95_high": 0.4288150609798545
+    }
+  },
+  "limitations": [
+    "Simulated users, not real interaction histories.",
+    "Relevance labels are derived from catalog metadata.",
+    "Offline results do not establish online user satisfaction."
+  ]
+}

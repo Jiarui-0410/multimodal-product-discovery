@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: product-discovery-api
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/product_discovery}
+    username: ${DATABASE_USERNAME:product_app}
+    password: ${DATABASE_PASSWORD:product_app}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+  servlet:
+    multipart:
+      max-file-size: ${MAX_IMAGE_SIZE:20MB}
+      max-request-size: ${MAX_IMAGE_SIZE:20MB}
+
+server:
+  port: ${PORT:8080}
+
+ml:
+  base-url: ${ML_SERVICE_URL:http://localhost:8000}
+
+ranking:
+  query-weight: ${QUERY_WEIGHT:0.60}
+  user-weight: ${USER_WEIGHT:0.30}
+  metadata-weight: ${METADATA_WEIGHT:0.10}
+  candidate-multiplier: ${CANDIDATE_MULTIPLIER:10}
+
+catalog:
+  csv-path: ${CATALOG_CSV_PATH:}
+  images-dir: ${CATALOG_IMAGES_DIR:images}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

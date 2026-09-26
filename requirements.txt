@@ -1,0 +1,29 @@
+# ML / Deep Learning
+torch>=2.0.0,<3
+torchvision>=0.15.0,<1
+
+# Transformers (CLIP)
+transformers>=4.35.0,<6
+
+# Vector Search
+faiss-cpu>=1.7.4,<2
+
+# Data Processing
+pandas>=1.5.0,<4
+numpy>=1.23.0,<3
+
+# Image Processing
+Pillow>=9.0.0,<13
+opencv-python>=4.8.0,<5
+
+# Backend API
+fastapi>=0.110.0,<1
+uvicorn>=0.25.0,<1
+python-multipart>=0.0.6,<1
+
+# UI
+streamlit>=1.64.0,<2
+
+# Utilities
+tqdm>=4.65.0,<5
+requests>=2.31.0,<3

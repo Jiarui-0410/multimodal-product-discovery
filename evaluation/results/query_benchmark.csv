@@ -1,0 +1,73 @@
+target_id,article_type,color,gender,relevant_count,query_id,cohort,query
+1,Sports Shoes,White,Women,171,Q001-literal,literal,Women White Sports Shoes
+1,Sports Shoes,White,Women,171,Q001-paraphrased,paraphrased,white workout sneakers for women
+2,Sports Shoes,Black,Men,462,Q002-literal,literal,Men Black Sports Shoes
+2,Sports Shoes,Black,Men,462,Q002-paraphrased,paraphrased,black workout sneakers for men
+3,Sports Shoes,Brown,Men,23,Q003-literal,literal,Men Brown Sports Shoes
+3,Sports Shoes,Brown,Men,23,Q003-paraphrased,paraphrased,brown workout sneakers for men
+4,Casual Shoes,Navy Blue,Men,114,Q004-literal,literal,Men Navy Blue Casual Shoes
+4,Casual Shoes,Navy Blue,Men,114,Q004-paraphrased,paraphrased,navy blue everyday footwear for men
+5,Casual Shoes,Khaki,Men,43,Q005-literal,literal,Men Khaki Casual Shoes
+5,Casual Shoes,Khaki,Men,43,Q005-paraphrased,paraphrased,khaki everyday footwear for men
+6,Casual Shoes,Grey,Men,144,Q006-literal,literal,Men Grey Casual Shoes
+6,Casual Shoes,Grey,Men,144,Q006-paraphrased,paraphrased,grey everyday footwear for men
+7,Shirts,Yellow,Men,51,Q007-literal,literal,Men Yellow Shirts
+7,Shirts,Yellow,Men,51,Q007-paraphrased,paraphrased,yellow button-down tops for men
+8,Shirts,Brown,Men,82,Q008-literal,literal,Men Brown Shirts
+8,Shirts,Brown,Men,82,Q008-paraphrased,paraphrased,brown button-down tops for men
+9,Shirts,Pink,Women,27,Q009-literal,literal,Women Pink Shirts
+9,Shirts,Pink,Women,27,Q009-paraphrased,paraphrased,pink button-down tops for women
+10,Tshirts,Cream,Men,39,Q010-literal,literal,Men Cream Tshirts
+10,Tshirts,Cream,Men,39,Q010-paraphrased,paraphrased,cream short-sleeve tees for men
+11,Tshirts,Pink,Men,66,Q011-literal,literal,Men Pink Tshirts
+11,Tshirts,Pink,Men,66,Q011-paraphrased,paraphrased,pink short-sleeve tees for men
+12,Tshirts,Green,Men,406,Q012-literal,literal,Men Green Tshirts
+12,Tshirts,Green,Men,406,Q012-paraphrased,paraphrased,green short-sleeve tees for men
+13,Jeans,Blue,Men,263,Q013-literal,literal,Men Blue Jeans
+13,Jeans,Blue,Men,263,Q013-paraphrased,paraphrased,blue denim trousers for men
+14,Jeans,Navy Blue,Men,20,Q014-literal,literal,Men Navy Blue Jeans
+14,Jeans,Navy Blue,Men,20,Q014-paraphrased,paraphrased,navy blue denim trousers for men
+15,Jeans,Navy Blue,Women,21,Q015-literal,literal,Women Navy Blue Jeans
+15,Jeans,Navy Blue,Women,21,Q015-paraphrased,paraphrased,navy blue denim trousers for women
+16,Watches,White,Women,280,Q016-literal,literal,Women White Watches
+16,Watches,White,Women,280,Q016-paraphrased,paraphrased,white wrist timepieces for women
+17,Watches,Black,Women,188,Q017-literal,literal,Women Black Watches
+17,Watches,Black,Women,188,Q017-paraphrased,paraphrased,black wrist timepieces for women
+18,Watches,Steel,Men,80,Q018-literal,literal,Men Steel Watches
+18,Watches,Steel,Men,80,Q018-paraphrased,paraphrased,steel wrist timepieces for men
+19,Handbags,Olive,Women,40,Q019-literal,literal,Women Olive Handbags
+19,Handbags,Olive,Women,40,Q019-paraphrased,paraphrased,olive carry purses for women
+20,Handbags,Red,Women,105,Q020-literal,literal,Women Red Handbags
+20,Handbags,Red,Women,105,Q020-paraphrased,paraphrased,red carry purses for women
+21,Handbags,Multi,Women,22,Q021-literal,literal,Women Multi Handbags
+21,Handbags,Multi,Women,22,Q021-paraphrased,paraphrased,multi carry purses for women
+22,Backpacks,Black,Men,33,Q022-literal,literal,Men Black Backpacks
+22,Backpacks,Black,Men,33,Q022-paraphrased,paraphrased,black rucksacks for men
+23,Backpacks,Red,Unisex,68,Q023-literal,literal,Unisex Red Backpacks
+23,Backpacks,Red,Unisex,68,Q023-paraphrased,paraphrased,red rucksacks for anyone
+24,Backpacks,Black,Unisex,255,Q024-literal,literal,Unisex Black Backpacks
+24,Backpacks,Black,Unisex,255,Q024-paraphrased,paraphrased,black rucksacks for anyone
+25,Dresses,Black,Women,103,Q025-literal,literal,Women Black Dresses
+25,Dresses,Black,Women,103,Q025-paraphrased,paraphrased,black one-piece outfits for women
+26,Dresses,Blue,Women,45,Q026-literal,literal,Women Blue Dresses
+26,Dresses,Blue,Women,45,Q026-paraphrased,paraphrased,blue one-piece outfits for women
+27,Dresses,Pink,Women,34,Q027-literal,literal,Women Pink Dresses
+27,Dresses,Pink,Women,34,Q027-paraphrased,paraphrased,pink one-piece outfits for women
+28,Heels,Beige,Women,88,Q028-literal,literal,Women Beige Heels
+28,Heels,Beige,Women,88,Q028-paraphrased,paraphrased,beige high-heeled footwear for women
+29,Heels,Brown,Women,201,Q029-literal,literal,Women Brown Heels
+29,Heels,Brown,Women,201,Q029-paraphrased,paraphrased,brown high-heeled footwear for women
+30,Heels,Black,Women,335,Q030-literal,literal,Women Black Heels
+30,Heels,Black,Women,335,Q030-paraphrased,paraphrased,black high-heeled footwear for women
+31,Sandals,Olive,Men,27,Q031-literal,literal,Men Olive Sandals
+31,Sandals,Olive,Men,27,Q031-paraphrased,paraphrased,olive open-toe footwear for men
+32,Sandals,Navy Blue,Men,21,Q032-literal,literal,Men Navy Blue Sandals
+32,Sandals,Navy Blue,Men,21,Q032-paraphrased,paraphrased,navy blue open-toe footwear for men
+33,Sandals,Brown,Men,228,Q033-literal,literal,Men Brown Sandals
+33,Sandals,Brown,Men,228,Q033-paraphrased,paraphrased,brown open-toe footwear for men
+34,Track Pants,Navy Blue,Men,44,Q034-literal,literal,Men Navy Blue Track Pants
+34,Track Pants,Navy Blue,Men,44,Q034-paraphrased,paraphrased,navy blue jogging bottoms for men
+35,Track Pants,Grey,Men,47,Q035-literal,literal,Men Grey Track Pants
+35,Track Pants,Grey,Men,47,Q035-paraphrased,paraphrased,grey jogging bottoms for men
+36,Track Pants,Black,Men,77,Q036-literal,literal,Men Black Track Pants
+36,Track Pants,Black,Men,77,Q036-paraphrased,paraphrased,black jogging bottoms for men
